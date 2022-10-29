@@ -13,4 +13,4 @@ const productosSchema = new Schema(
   { versionKey: false }
 );
 
-module.exports = mongoose.model("productos", productosSchema);
+module.exports = mongoose.model("Producto", productosSchema);
