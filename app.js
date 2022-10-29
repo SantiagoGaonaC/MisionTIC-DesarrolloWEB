@@ -1,5 +1,4 @@
 const express = require("express");
-const bodyParser = require("body-parser");
 const app = express();
 
 //requerir la conexión
@@ -10,7 +9,6 @@ app.set("view engine", "ejs");
 
 //formato JSON para creación y edición
 app.use(express.urlencoded({ extended: true }));
-app.use(bodyParser.json());
 app.use(express.static("public"));
 
 const productos = require("./routes/productos");
