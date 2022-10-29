@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
 
+//requerir la conexión
+const db = require("./db");
+
 //setear motor de plantillas
 app.set("view engine", "ejs");
 
