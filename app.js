@@ -11,6 +11,9 @@ app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
+const productos = require('./routes/productos')
+app.use(productos)
+
 app.get("/", (req, res) => {
   res.send("WEB!");
 });
